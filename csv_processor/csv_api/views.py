@@ -17,3 +17,8 @@ def process_csv(request):
         \r\n and this is not what you want """
         # print(json.dumps(response_text))
         return HttpResponse(json.dumps(response_text), content_type='application/json; charset=utf-8')
+
+
+def show_template(request):
+    return render(request, "csv_api/home.html")
+
