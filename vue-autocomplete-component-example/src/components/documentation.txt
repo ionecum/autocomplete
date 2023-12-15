@@ -1,0 +1,46 @@
+Before the input: <!-- the keydown directives are events that prevent the default 
+		behavior of the arrow keys and also allow to define a custom behavior -->
+
+Before the li: <!-- The :class= is a dynamic binding used with the v-bind directive, the 
+			: is a short form-->
+
+Below data(): /* In the data method of the component, selectedIndex is initialized to -1. This property represents the index of the currently selected/highlighted item in the list. By default, it is set to -1 to indicate that no item is selected. */
+
+Below mounted(): /* When the user clicks outside the component (that is the list of 
+			suggestions), this.handleClickOutside gets called */
+
+Below methods(): 
+/* When the user clicks on an element of the suggested list, that element 
+			gets selected and the component (the list of suggestions) should close. */
+
+Above filterResults()
+/* In this method the results get modified as the user type additional letters. */
+
+Above onChange()
+/* The user typed a new letter in the input box (or deleted it) and the search
+			suggestions should be adjusted accordingly. */
+
+
+Below this.filterResults
+/**
+				 * The component, that is, the suggestion list, should be disabled if 
+				 * the user deletes all the letters from the input box.
+				 */
+Above handleClickOutside
+/* When the user clicks outside the suggestion list, it should be disabled. */
+
+Above onArrowDown
+/**
+			 * The user must be able to navigate up the suggestion list, if 
+			 * nhe (neuter gender meaning he or she) presses the up arrow key
+			 * from a PC standard keyboard.
+			 */
+
+Above on Arrow up
+/**
+			 * The user must be able to navigate down the suggestion list if nhe 
+			 * presses the down arrow key from a PC keyboard.
+			 */
+
+Above selectItem
+/* Here, we handle the Enter or Tab key press event and set the search input to the value of the currently highlighted item, then close the suggestions by setting isOpen to false.*/
