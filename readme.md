@@ -1,4 +1,4 @@
-This project is meant to be a protest against most online tutorials, which are incomplete, poorly working or superficially implemented. Also, I strongly believe that video tutorials are not ideal for learning because you have to constantly stop and enlarge them and the best way to get the most out of a tutorial is to try to reproduce it, writing the code yourself and seeing it working in your own environment.
+# The autocomplete fullstack solution
 
 This project features a complete autocomplete list. It has a good keyboard support and it supports unicode accents. Even if the style and the graphics is quite basic, it't fully functional and it can be adapted to your environment and style. 
 
