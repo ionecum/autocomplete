@@ -8,7 +8,7 @@ The project is public and open to contributions, for example some improvements a
 
 You can see a complete demonstration of its operation [in this page](https://www.meetero.com/autocomplete-demo/)
 
-###Usage
+### Usage
 First of all clone the project in your local computer.
 
 The virtual environment files for python are not included here, when you create a new virtual environment, you should run
