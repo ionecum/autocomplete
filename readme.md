@@ -7,3 +7,23 @@ It is not using a database because its goal is to be ready to run as soon as dow
 The project is public and open to contributions, for example some improvements are missing, such as showing the complete list when the user clicks or taps on the input.
 
 You can see a complete demonstration of its operation [in this page](https://www.meetero.com/autocomplete-demo/)
+
+###Usage
+First of all clone the project in your local computer.
+
+The virtual environment files for python are not included here, when you create a new virtual environment, you should run
+`pip install -r requirements.txt`
+
+Similarly, node modules to run Vue are not included. You should navigate into vue-autocomplete-component-example folder and run `npm install`, after having created a new Vue project. 
+
+These are only quick indication. The project assumes that you know how to create a Vue and a Django project.
+
+The entire project, especially the Vue part are commented deeply because the file have an educational purpose. To see the available commands in Vue, navigate through the vue-autocomplete-component-example directory and run
+
+`npm run`
+
+This will show all the available options to run a development server or to build the JavaScript files inside the static folder of Django template. The project was configured in a way it will run either in development mode and in production, without changing any configuration. See vue.config.js to learn how it is configured. 
+
+The `axios.get('http://127.0.0.1:8000/api/process-csv/')` in App.vue is made to run the project locally, this will consume the data from the Django server.
+
+
