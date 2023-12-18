@@ -2,9 +2,10 @@
 <template>
 	<div class="autocomplete">
 		<!-- In the setup below, the prevent modifier ensures that the default behavior of the arrow keys is prevented, allowing your custom key event handling to take effect. -->
+		<!-- @focus was clearTxt -->
 		<input v-model="search" 
 			@input="onChange" 
-			@focus="clearTxt"
+			@focus="onChange"
 			@keydown.esc.prevent="resetCmp"
 			@keydown.down.prevent="onArrowDown" 
 			@keydown.up.prevent="onArrowUp"
@@ -32,11 +33,12 @@
 				{{ result }}
 			</li>
 		</ul>
-	</div>
-	<div>
+		<div>
 		<input class="nextEle" v-model="nextInputValue" ref="nextInputElement" type="text"
 			placeholder="illustrating the focus" />
+		</div>
 	</div>
+	
 </template>
 <script>
 export default {
