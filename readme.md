@@ -27,5 +27,5 @@ This will show all the available options to run a development server or to build
 The `axios.get('http://127.0.0.1:8000/api/process-csv/')` in App.vue is made to run the project locally, this will consume the data from the Django server.
 
 ## To Do
-1. What if the user type a name that does not exist in the list? This was not implemented because the behaviour may be wanted or unwanted depending of your form requirements. In some forms it's required to pick only one of the names form the list, in other it is not. In order to keep this widget as more general as possible, if you need to enforce the requirement of only picking a name from the list, you must implement it yourself.
+1. **What if the user type a name that does not exist in the list?** This was not implemented because the behaviour may be wanted or unwanted depending of your form requirements. In some forms it's required to pick only one of the names form the list, in other it is not. In order to keep this widget as more general as possible, if you need to enforce the requirement of only picking a name from the list, you must implement it yourself.
 
