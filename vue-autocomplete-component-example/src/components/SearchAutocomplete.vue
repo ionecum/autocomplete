@@ -2,10 +2,9 @@
 <template>
 	<div class="autocomplete">
 		<!-- In the setup below, the prevent modifier ensures that the default behavior of the arrow keys is prevented, allowing your custom key event handling to take effect. -->
-		<!-- @focus was clearTxt -->
 		<input v-model="search" 
 			@input="onChange" 
-			@focus="onChange"
+			@focus="clearTxt"
 			@keydown.esc.prevent="resetCmp"
 			@keydown.down.prevent="onArrowDown" 
 			@keydown.up.prevent="onArrowUp"
@@ -13,6 +12,7 @@
 			@keydown.tab.prevent="selectItem" 
 			type="text"
 			ref="inputField"
+			placeholder="Type something"
 		/>
 		<!-- The mouseover event here is very important, because it allows
 		to select the element on pressing enter or tab, even if this takes
@@ -72,6 +72,7 @@ export default {
 		/* Helper to clear the search box */
 		clearTxt(){
 			this.search='';
+			this.onChange();
 		},
 		/* Helper to clear and close the search box */
 		resetCmp(){
