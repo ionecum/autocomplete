@@ -131,7 +131,7 @@ DEFAULT_CHARSET = 'utf-8'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    # Django will looks in myapp/static automatically, no need to define a statinc folder for this
+    # Django will look in myapp/static automatically, no need to define a statinc folder for this
     #os.path.join(BASE_DIR, 'static'),
 ]
 
